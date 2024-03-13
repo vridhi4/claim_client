@@ -14,7 +14,7 @@ const Mypolicies = () => {
     const fetchUserPolicies = async () => {
         try {
             const get_token = localStorage.getItem('token');
-            const response = await fetch('http://localhost:8003/customer/user_policies', {
+            const response = await fetch('https://claim-server.onrender.com/customer/user_policies', {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',

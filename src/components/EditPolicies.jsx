@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import Sidebar from "./sidebar";
 import Header from "./header";
 import "./EditPolicies.css";
-const All_policy_API = `http://localhost:8003/customer/policies`;
+const All_policy_API = `https://claim-server.onrender.com/customer/policies`;
 
 const EditPolicies = () => {
   const navigate = useNavigate();
@@ -67,7 +67,7 @@ const EditPolicies = () => {
       console.log("this woe");
       const get_token = localStorage.getItem("admin_token");
       const response = await fetch(
-        `http://localhost:8003/admin/delete_policy/${id}`,
+        `https://claim-server.onrender.com/admin/delete_policy/${id}`,
         {
           method: "DELETE",
           headers: {

@@ -41,7 +41,7 @@ const ApproveClaim = () => {
   const ApproveHandler = async () =>{
     try {
         const response = await fetch(
-          `http://localhost:8003/admin/approve_claim/${claimData._id}`,
+          `https://claim-server.onrender.com/admin/approve_claim/${claimData._id}`,
           {
             method: "PUT",
             headers: {
@@ -63,7 +63,7 @@ const ApproveClaim = () => {
   const DenyHandler = async () =>{
     try {
         const response = await fetch(
-          `http://localhost:8003/admin/deny_claim/${claimData._id}`,
+          `https://claim-server.onrender.com/admin/deny_claim/${claimData._id}`,
           {
             method: "PUT",
             headers: {

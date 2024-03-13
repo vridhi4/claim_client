@@ -30,7 +30,7 @@ const AddPolicy = () =>{
         e.preventDefault();
         try {
           const response = await fetch(
-            "http://localhost:8003/admin/create_policy",
+            "https://claim-server.onrender.com/admin/create_policy",
             {
               method: "POST",
               headers: {

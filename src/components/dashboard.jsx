@@ -4,7 +4,7 @@ import Header from './header';
 import { useNavigate } from 'react-router-dom';
 import './dashboard.css';
 import All_Policy_Data from './All_Policy_Data';
-const All_policy_API = `http://localhost:8003/customer/policies`;
+const All_policy_API = `https://claim-server.onrender.com/customer/policies`;
 
 
 

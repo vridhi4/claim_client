@@ -13,10 +13,10 @@ const FetchAllclaim = ({ isAdmin }) => {
       let url = "";
       let get_token = "";
       if (isAdmin) {
-        url = "http://localhost:8003/admin/claims";
+        url = "https://claim-server.onrender.com/admin/claims";
         get_token = localStorage.getItem("admin_token");
       } else {
-        url = "http://localhost:8003/customer/claims";
+        url = "https://claim-server.onrender.com/claims";
         get_token = localStorage.getItem("token");
       }
 

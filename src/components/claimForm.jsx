@@ -12,7 +12,7 @@ const ClaimForm = () => {
 
 
   const fetch_Claim = async () => {
-    const url = 'http://localhost:8003/customer/claim_policy/' + policyNumber; // Added '/' between base URL and policyNumber
+    const url = 'https://claim-server.onrender.com/customer/claim_policy/' + policyNumber; // Added '/' between base URL and policyNumber
     const get_token = localStorage.getItem('token');
     const response = await fetch(url, {
       method: 'POST',

@@ -10,7 +10,7 @@ const AdminPendingClaims = () => {
 
     useEffect(() => {
         const fetchData = async () => {
-            const url = 'http://localhost:8003/admin/claims';
+            const url = 'https://claim-server.onrender.com/admin/claims';
             const get_token = localStorage.getItem('admin_token');
 
             try {

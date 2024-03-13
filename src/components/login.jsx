@@ -37,7 +37,7 @@ const Login = ({ isAdmin }) => {
         try {
             let response;
             if (isAdmin) {
-                response = await fetch('http://localhost:8003/admin/login', {
+                response = await fetch('https://claim-server.onrender.com/admin/login', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
@@ -45,7 +45,7 @@ const Login = ({ isAdmin }) => {
                     body: JSON.stringify(Admin)
                 });
             } else {
-                response = await fetch('http://localhost:8003/customer/login', {
+                response = await fetch('https://claim-server.onrender.com/customer/login', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'

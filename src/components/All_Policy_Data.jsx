@@ -11,7 +11,7 @@ const All_Policy_data = ({ all_policies, isHome }) => {
 
     const ApplyPolicyHandler = async (policyNumber) => {
         try {
-            const response = await fetch('http://localhost:8003/customer/applyPolicy', {
+            const response = await fetch('https://claim-server.onrender.com/customer/applyPolicy', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

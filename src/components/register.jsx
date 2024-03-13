@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import signup_pic from "./assets/signup.png";
 import './register.css';
 import { useNavigate } from 'react-router-dom';
 
@@ -27,7 +26,7 @@ const Signup = () => {
         e.preventDefault();
         console.log(user_registration);
         try {
-            const response = await fetch('http://localhost:8003/customer/register', {
+            const response = await fetch('https://claim-server.onrender.com/customer/register', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
