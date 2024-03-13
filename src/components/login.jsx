@@ -44,7 +44,7 @@ const Login = ({ isAdmin }) => {
                     body: JSON.stringify(Admin)
                 });
             } else {
-                response = await fetch('process.env.REACT_APP_URL}/customer/login', {
+                response = await fetch('https://claim-server.onrender.com/customer/login', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
