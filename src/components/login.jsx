@@ -36,7 +36,7 @@ const Login = ({ isAdmin }) => {
         try {
             let response;
             if (isAdmin) {
-                response = await fetch(`${process.env.REACT_APP_URL}/admin/login`, {
+                response = await fetch('https://claim-server.onrender.com/admin/login', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
@@ -44,7 +44,7 @@ const Login = ({ isAdmin }) => {
                     body: JSON.stringify(Admin)
                 });
             } else {
-                response = await fetch(`${process.env.REACT_APP_URL}/customer/login`, {
+                response = await fetch('process.env.REACT_APP_URL}/customer/login', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
