@@ -1,0 +1,1 @@
+export const ReactUrl = "https://claim-server.onrender.com"

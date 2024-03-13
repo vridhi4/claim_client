@@ -3,6 +3,7 @@ import Header from "./header";
 import Sidebar from "./sidebar";
 import { useLocation } from "react-router-dom";
 import './ApproveClaim.css'
+import {ReactUrl} from './ReactURL';
 
 const ApproveClaim = () => {
   const location = useLocation();
@@ -41,7 +42,7 @@ const ApproveClaim = () => {
   const ApproveHandler = async () =>{
     try {
         const response = await fetch(
-          `https://claim-server.onrender.com/admin/approve_claim/${claimData._id}`,
+          `${ReactUrl}/approve_claim/${claimData._id}`,
           {
             method: "PUT",
             headers: {
@@ -63,7 +64,7 @@ const ApproveClaim = () => {
   const DenyHandler = async () =>{
     try {
         const response = await fetch(
-          `https://claim-server.onrender.com/admin/deny_claim/${claimData._id}`,
+          `${ReactUrl}/admin/deny_claim/${claimData._id}`,
           {
             method: "PUT",
             headers: {

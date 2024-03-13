@@ -3,6 +3,7 @@ import All_Policy_Data from './All_Policy_Data';
 import Sidebar from './sidebar';
 import Header from './header';
 import './UserPolicies.css'
+import { ReactUrl } from './ReactURL';
 
 const Mypolicies = () => {
     const [userPolicy, setUserPolicy] = useState([]);
@@ -14,7 +15,7 @@ const Mypolicies = () => {
     const fetchUserPolicies = async () => {
         try {
             const get_token = localStorage.getItem('token');
-            const response = await fetch('https://claim-server.onrender.com/customer/user_policies', {
+            const response = await fetch(`${ReactUrl}/customer/user_policies`, {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',

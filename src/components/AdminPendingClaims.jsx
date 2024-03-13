@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import Sidebar from './sidebar';
 import Header from './header';
 import AdminClaimsTable from './AdminClaimsTable';
+import {ReactUrl} from './ReactURL';
 
 const AdminPendingClaims = () => {
  
@@ -10,7 +11,7 @@ const AdminPendingClaims = () => {
 
     useEffect(() => {
         const fetchData = async () => {
-            const url = 'https://claim-server.onrender.com/admin/claims';
+            const url = `${ReactUrl}/admin/claims`;
             const get_token = localStorage.getItem('admin_token');
 
             try {

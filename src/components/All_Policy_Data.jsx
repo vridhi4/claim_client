@@ -3,6 +3,8 @@ import { useNavigate } from 'react-router-dom';
 import ShowClaim from './ShowClaims'; // Make sure to import the correct component
 import './All_Policy_Data.css'; // Import your CSS file
 
+import {ReactUrl} from './ReactURL';
+
 const All_Policy_data = ({ all_policies, isHome }) => {
     const navigate = useNavigate(); // Use useNavigate hook if you're using React Router
     const get_token = localStorage.getItem('token');
@@ -11,7 +13,7 @@ const All_Policy_data = ({ all_policies, isHome }) => {
 
     const ApplyPolicyHandler = async (policyNumber) => {
         try {
-            const response = await fetch('https://claim-server.onrender.com/customer/applyPolicy', {
+            const response = await fetch(`${ReactUrl}/customer/applyPolicy`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

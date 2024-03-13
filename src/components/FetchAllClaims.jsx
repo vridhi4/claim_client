@@ -3,6 +3,7 @@ import ShowClaim from "./ShowClaims";
 import ClaimsTable from "./claimsTable";
 import Header from "./header";
 import Sidebar from "./sidebar";
+import {ReactUrl} from './ReactURL';
 
 const FetchAllclaim = ({ isAdmin }) => {
   const [claim, setclaim] = useState([]);
@@ -13,10 +14,10 @@ const FetchAllclaim = ({ isAdmin }) => {
       let url = "";
       let get_token = "";
       if (isAdmin) {
-        url = "https://claim-server.onrender.com/admin/claims";
+        url = `${ReactUrl}/admin/claims`;
         get_token = localStorage.getItem("admin_token");
       } else {
-        url = "https://claim-server.onrender.com/customer/claims";
+        url = `${ReactUrl}/customer/claims`;
         get_token = localStorage.getItem("token");
       }
 

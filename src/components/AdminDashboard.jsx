@@ -4,7 +4,8 @@ import Header from './header';
 import Sidebar from './sidebar';
 import { useNavigate } from 'react-router-dom';
 import AdminClaimsTable from './AdminClaimsTable';
-import './AdminDashboard.css'
+import './AdminDashboard.css';
+import {ReactUrl} from './ReactURL';
 
 
 
@@ -18,7 +19,7 @@ const AdminDashboard = () =>{
 
     useEffect(() => {
         const fetchData = async () => {
-            const url = 'https://claim-server.onrender.com/admin/claims';
+            const url = `${ReactUrl}/admin/claims`;
             const get_token = localStorage.getItem('admin_token');
 
             try {

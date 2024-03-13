@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './ClaimForm.css'; // Importing CSS file
+import {ReactUrl} from './ReactURL'
 
 const ClaimForm = () => {
   const [amount, setAmount] = useState('');
@@ -7,12 +8,13 @@ const ClaimForm = () => {
   const [hospital, setHospital] = useState('');
   const [policyNumber, setPolicyNumber] = useState('');
 
+
   const policyNumArray = JSON.parse(localStorage.getItem('policyNumArray')) || [];
 
 
 
   const fetch_Claim = async () => {
-    const url = 'https://claim-server.onrender.com/customer/claim_policy/' + policyNumber; // Added '/' between base URL and policyNumber
+    const url = `${ReactUrl}/customer/claim_policy/` + policyNumber; // Added '/' between base URL and policyNumber
     const get_token = localStorage.getItem('token');
     const response = await fetch(url, {
       method: 'POST',

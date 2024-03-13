@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './register.css';
 import { useNavigate } from 'react-router-dom';
+import {ReactUrl} from './ReactURL.jsx'
 
 const Signup = () => {
 
@@ -26,7 +27,7 @@ const Signup = () => {
         e.preventDefault();
         console.log(user_registration);
         try {
-            const response = await fetch('https://claim-server.onrender.com/customer/register', {
+            const response = await fetch(`${ReactUrl}/customer/register`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

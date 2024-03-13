@@ -3,7 +3,8 @@ import { useNavigate } from "react-router-dom";
 import Sidebar from "./sidebar";
 import Header from "./header";
 import "./EditPolicies.css";
-const All_policy_API = `https://claim-server.onrender.com/customer/policies`;
+import {ReactUrl} from './ReactURL';
+const All_policy_API = `${ReactUrl}/customer/policies`;
 
 const EditPolicies = () => {
   const navigate = useNavigate();
@@ -67,7 +68,7 @@ const EditPolicies = () => {
       console.log("this woe");
       const get_token = localStorage.getItem("admin_token");
       const response = await fetch(
-        `https://claim-server.onrender.com/admin/delete_policy/${id}`,
+        `${ReactUrl}/admin/delete_policy/${id}`,
         {
           method: "DELETE",
           headers: {
@@ -107,7 +108,7 @@ const EditPolicies = () => {
     e.preventDefault();
     try {
       const response = await fetch(
-        "http://localhost:8003/admin/create_policy",
+        `${ReactUrl}/admin/create_policy`,
         {
           method: "POST",
           headers: {

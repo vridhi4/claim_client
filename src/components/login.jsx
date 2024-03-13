@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './login.css';
 import { useNavigate } from 'react-router-dom';
+import {ReactURL} from './ReactURL'
 
 const Login = ({ isAdmin }) => {
     const navigate = useNavigate();
@@ -36,7 +37,7 @@ const Login = ({ isAdmin }) => {
         try {
             let response;
             if (isAdmin) {
-                response = await fetch('https://claim-server.onrender.com/admin/login', {
+                response = await fetch(`${ReactURL}/admin/login`, {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
@@ -44,7 +45,7 @@ const Login = ({ isAdmin }) => {
                     body: JSON.stringify(Admin)
                 });
             } else {
-                response = await fetch('https://claim-server.onrender.com/customer/login', {
+                response = await fetch(`${ReactURL}/customer/login`, {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
