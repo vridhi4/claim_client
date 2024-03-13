@@ -1,7 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import './App.css';
-import dotenv from 'dotenv';
-
 
 import Signup from "./components/register.jsx"
 import Login from "./components/login.jsx";
@@ -17,7 +15,6 @@ import ApproveClaim from "./components/ApproveClaim.jsx";
 import EditPolicies from "./components/EditPolicies.jsx";
 import AddPolicy from "./components/AddPolicy.jsx";
 
-dotenv.config();
 
 function App() {
   return  (
