@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import Sidebar from "./sidebar";
 import Header from "./header";
 import './AddPolicy.css';
-import {ReactURL} from './ReactURL'
+import { ReactUrl} from './ReactURL'
 
 const AddPolicy = () =>{
 
@@ -31,7 +31,7 @@ const AddPolicy = () =>{
         e.preventDefault();
         try {
           const response = await fetch(
-            `${ReactURL}/admin/create_policy`,
+            `${ReactUrl}/admin/create_policy`,
             {
               method: "POST",
               headers: {
