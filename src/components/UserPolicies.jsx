@@ -51,7 +51,7 @@ const Mypolicies = () => {
                     <Sidebar />
                 </div>
                 <div className='content-container'>
-                    <div className='table-container'>
+                    <div className='table-container1'>
                         <All_Policy_Data all_policies={userPolicy} />
                     </div>
                 </div>
