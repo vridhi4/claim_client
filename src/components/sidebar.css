@@ -1,0 +1,54 @@
+/* sidebar.css */
+
+.sidebar {
+  color: #dbd5d5;
+  width: 200px; /* Adjust width as needed */
+    background-color: #5B8163;
+    padding: 20px;
+    height: 300%; /* Set sidebar height to 100% of its container */
+    box-sizing: border-box;
+    overflow-y: auto; /* Add vertical scroll if content overflows */
+
+  }
+
+  
+  
+  .sidebar h2 {
+    margin-top: 0;
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sidebar ul li {
+    font-weight: bold;
+
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  
+  .sidebar ul li:last-child {
+    margin-bottom: 0;
+  }
+  
+  .sidebar ul li a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .sidebar ul li a:hover {
+    color: #555;
+  }
+  
+  .links li {
+    cursor: pointer;
+    margin: 30px;
+    transition: color 0.3s ease; /* Add transition effect for smooth color change */
+  }
+  
+  .links li:hover {
+    color: #fff; /* Change text color to bright white on hover */
+  }

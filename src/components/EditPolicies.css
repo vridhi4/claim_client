@@ -1,0 +1,106 @@
+
+.policy-form {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.form-input {
+    width: 90%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+
+.form-container {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Add this line */
+}
+
+.table-container{
+    display: flex;
+    justify-content: center;
+}
+
+/* table-styles.css */
+.table-container {
+    overflow-x: auto; /* Enable horizontal scrolling for tables with many columns */
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .table th,
+  .table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd; /* Add bottom border for table rows */
+  }
+  
+  .table th {
+    background-color: #f2f2f2; /* Light gray background for table headers */
+  }
+  
+  .table tbody tr:nth-child(even) {
+    background-color: #f9f9f9; /* Alternate row background color */
+  }
+  
+
+  .table th:first-child,
+  .table td:first-child {
+    padding-left: 20px; /* Add extra padding to first column */
+  }
+  
+  .table th:last-child,
+  .table td:last-child {
+    padding-right: 20px; /* Add extra padding to last column */
+  }
+  
+
+ 
+
+  /* editPolicies.css */
+.delete-button {
+    font-weight: 600;
+    font-size: 14px;
+    background-color: #fff9eb; /* Cream background color */
+    color: #228b22; /* Green text color */
+    padding: 8px 16px;
+    border: 2px solid #228b22; /* Border color and width */
+    border-radius: 4px; /* Initial border radius */
+    cursor: pointer;
+    transition: border-radius 0.3s ease;
+  }
+  
+  .delete-button:hover {
+    border-radius: 17px; /* Reduced border radius on hover */
+  }
+  

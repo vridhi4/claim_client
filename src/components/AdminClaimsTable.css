@@ -1,0 +1,51 @@
+/* table-styles.css */
+.table-container {
+    overflow-x: auto; /* Enable horizontal scrolling for tables with many columns */
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .table th,
+  .table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd; /* Add bottom border for table rows */
+  }
+  
+  .table th {
+    background-color: #f2f2f2; /* Light gray background for table headers */
+  }
+  
+  .table tbody tr:nth-child(even) {
+    background-color: #f9f9f9; /* Alternate row background color */
+  }
+  
+
+  
+  .table th:first-child,
+  .table td:first-child {
+    padding-left: 20px; /* Add extra padding to first column */
+  }
+  
+  .table th:last-child,
+  .table td:last-child {
+    padding-right: 20px; /* Add extra padding to last column */
+  }
+  .review-button {
+    font-weight: 600;
+    font-size: 14px;
+    background-color: #fff9eb; /* Cream background color */
+    color: #228b22; /* Green text color */
+    padding: 8px 16px;
+    border: 2px solid #228b22; /* Border color and width */
+    border-radius: 4px; /* Initial border radius */
+    cursor: pointer;
+    transition: border-radius 0.3s ease; /* Transition for border radius change */
+  }
+  
+  .review-button:hover {
+    border-radius: 17px; /* Reduced border radius on hover */
+  }

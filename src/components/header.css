@@ -1,0 +1,41 @@
+/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+.company-name{
+  display: block;
+  margin-right: auto;
+}
+.header {
+  font-family: 'Montserrat', sans-serif;
+  height: 50px;
+  background: #5B8163;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid black;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.logout-button {
+  font-weight: 600;
+  font-size: 14px;
+  background-color: #fff9eb; /* Cream background color */
+  color: #228b22; /* Green text color */
+  padding: 8px 16px;
+  border: 2px solid #228b22; /* Border color and width */
+  border-radius: 4px; /* Initial border radius */
+  cursor: pointer;
+  transition: border-radius 0.3s ease;
+}
+
+.logout-button:hover {
+  border-radius: 17px; /* Reduced border radius on hover */
+}
+
+.logo {
+  height: 180px;
+  width: 200px;
+  border-radius: 40px;
+}

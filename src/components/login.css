@@ -1,0 +1,86 @@
+/* signup.css */
+
+/* Container styles */
+.container {
+    align-items: center;
+    justify-content: row;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Form container styles */
+  .signup-content {
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+  }
+  
+  /* Form title styles */
+  .form-title {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 24px;
+    color: #333333;
+  }
+  
+  /* Form input styles */
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  /* Form submit button styles */
+  .form-submit {
+    width: 100%;
+    padding: 10px;
+    background-color: #036755;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .form-submit:hover {
+    background-color: #21936D;
+  }
+  
+  /* Signup image styles */
+  .signup-image {
+
+    margin-top: 20px;
+  }
+  
+  .signup-image img {
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  .login-admin{
+    display: flex;
+   
+    color: #21936D;
+    
+    border-radius: 6px;
+    
+    justify-content: center;
+  }
+  .login-admin span{
+    cursor: pointer;
+  }
+

@@ -1,0 +1,71 @@
+/* styles.css */
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  table td, table th {
+    padding: 8px;
+    border: 1px solid #ddd;
+  }
+  
+  table th {
+    background-color: #f2f2f2; /* Light gray background for table headers */
+  }
+  
+  /* Button styles */
+  /* ApproveClaim.css */
+
+.buttons {
+    margin-top: 20px;
+  }
+  
+  .buttons button {
+    width: 100px;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .buttons button:first-child {
+    margin-right: 10px; /* Add margin between the buttons */
+  }
+  
+  .buttons button:hover {
+    background-color: #056655;
+    color: #fff;
+  }
+  
+  .approve-button {
+    background-color: green; /* Add specific styles for the approve button */
+  }
+  
+  .deny-button {
+    background-color: red; /* Add specific styles for the deny button */
+  }
+  
+
+  .content-container3{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    justify-content: space-between;
+    justify-content: space-around;
+  }
+
+  .label {
+    background-color:#fafafa; /* Darker shade of grey for labels */
+    font-weight: bold;
+  }
+  
+  .value {
+    color: #888; /* Lighter shade of grey for values */
+  }

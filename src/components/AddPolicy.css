@@ -1,0 +1,58 @@
+.policy-form {
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+  
+
+    background-color: #E4FFED; /* Light gray background */
+  }
+  
+  .form-label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #042D0F; /* Green text color */
+  }
+  
+  .form-input {
+    background-color:#b0d6b9;
+    border: 1px solid #042D0F;
+    border-color: #042D0F;
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+
+    box-sizing: border-box; /* Ensure input width includes padding and border */
+  }
+  
+  
+  .submit-button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #036755; /* Green background color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-button:hover {
+    background-color: #007f00; /* Darker green color on hover */
+  }
+  
+  .content-container2
+  {
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .main-container2
+
+  
+  { display: flex;
+    height: 100vh;
+    background-color:#E4FFED;}
+ 

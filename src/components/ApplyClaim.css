@@ -1,0 +1,22 @@
+.main-container1{
+  display: flex;
+  background-color: #E4FFED;
+  height: 100vh; /* Set height to 100% of viewport height */
+  box-sizing: border-box;
+
+  }
+
+  .content-container1{
+margin-top: 40px;
+    margin-left: auto; /* Set left margin to auto */
+  margin-right: auto;
+    display: flex; 
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: top;
+  }
+
+  .sidebar-container{
+    margin: 0%;
+  }
