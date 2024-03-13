@@ -14,9 +14,10 @@ const Login = ({ isAdmin }) => {
     const [Admin, SetAdmin] = useState({
         username: "",
         password: ""
-    })
+    });
 
     const HandleInput = (e) => {
+        console.log(isAdmin)
         const { name, value } = e.target;
         if (isAdmin) {
             SetAdmin(prevAdmin => ({
@@ -85,14 +86,14 @@ const Login = ({ isAdmin }) => {
                                     <>
                                         <div className='form-group'>
                                             <label htmlFor="username">Username</label>
-                                            <input type="text" name="Username" id='Username' autoComplete='off' placeholder='Your Username'
-                                                value={Admin.Username}
+                                            <input type="text" name="username" id='Username' autoComplete='off' placeholder='Your Username'
+                                                value={Admin.username}
                                                 onChange={HandleInput} />
                                         </div>
                                         <div className='form-group'>
                                             <label htmlFor="Password">Password</label>
-                                            <input type="password" name="Password" id='Password' autoComplete='off' placeholder='Your Password'
-                                                value={Admin.Password}
+                                            <input type="password" name="password" id='Password' autoComplete='off' placeholder='Your Password'
+                                                value={Admin.password}
                                                 onChange={HandleInput} />
                                         </div>
                                     </>
@@ -116,14 +117,16 @@ const Login = ({ isAdmin }) => {
                                     <input type="submit" name='login' id='login' className='form-submit' value="Login" />
                                 </div>
                             </form>
-                            <div className='signup-image'>
-                                <figure>
-                                    <img src={signup_pic} alt="Login Pic" />
-                                </figure>
-                            </div>
+                            {isAdmin && (
+                                <div className='back-login'>
+                                    <span onClick={() => navigate('/register')}>SignUp</span>
+                                    <span onClick={() => navigate('/login')}>Login</span>
+                                </div>
+                            )}
                             {!isAdmin && ( // Render only if it's user login
                                 <div className='login-admin'>
                                     <span onClick={() => navigate('/adminLogin')}>Login as admin</span>
+                                    <span onClick={() => navigate('/register')}>SignUp</span>
                                 </div>
                             )}
                         </div>

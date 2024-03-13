@@ -116,9 +116,10 @@ const Signup = () => {
                                     </div>
                                 </form>
                                 <div className='signup-image'>
-                                    <figure>
-                                        <img src={signup_pic} alt="Registration Pic" />
-                                    </figure>
+                                   
+                                </div>
+                                <div className='login-user'>
+                                    <span onClick={() => navigate('/login')}>Already a user? Login!</span>
                                 </div>
                             </div>
                         </div>
