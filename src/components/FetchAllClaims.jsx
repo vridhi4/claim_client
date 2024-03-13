@@ -16,7 +16,7 @@ const FetchAllclaim = ({ isAdmin }) => {
         url = "https://claim-server.onrender.com/admin/claims";
         get_token = localStorage.getItem("admin_token");
       } else {
-        url = "https://claim-server.onrender.com/claims";
+        url = "https://claim-server.onrender.com/customer/claims";
         get_token = localStorage.getItem("token");
       }
 
