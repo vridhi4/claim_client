@@ -80,7 +80,7 @@ const AdminDashboard = () =>{
 
       
 
-<button onClick={handleLogout}>LOGOUT</button>
+
       
  </>
     )
