@@ -42,7 +42,7 @@ const ApproveClaim = () => {
   const ApproveHandler = async () =>{
     try {
         const response = await fetch(
-          `${ReactUrl}/approve_claim/${claimData._id}`,
+          `${ReactUrl}/admin/approve_claim/${claimData._id}`,
           {
             method: "PUT",
             headers: {
