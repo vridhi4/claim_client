@@ -26,7 +26,11 @@ const ClaimForm = () => {
         claim_amount: amount, claim_reason: reason, Hospital_name: hospital, policy_num: policyNumber
       })
     });
+    
   }
+
+
+  
 
   const handleAmountChange = (event) => {
     setAmount(event.target.value);

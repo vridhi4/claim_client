@@ -1,97 +1,138 @@
 /* signup.css */
+.login_page {
+  display: flex;
+  justify-content: space-evenly;
+  /* width: 80%; */
+}
 
 /* Container styles */
-.container {
-    align-items: center;
-    justify-content: row;
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  /* Form container styles */
-  .signup-content {
-    background-color: #ffffff;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 30px;
-  }
-  
-  /* Form title styles */
-  .form-title {
-    margin-bottom: 20px;
-    text-align: center;
-    font-size: 24px;
-    color: #333333;
-  }
-  
-  /* Form input styles */
-  .form-group {
-    margin-bottom: 20px;
-  }
-  
-  .form-group label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-  }
-  
-  .form-group input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #cccccc;
-    border-radius: 5px;
-    box-sizing: border-box;
-  }
-  
-  /* Form submit button styles */
-  .form-submit {
-    width: 100%;
-    padding: 10px;
-    background-color: #036755;
-    color: #ffffff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .form-submit:hover {
-    background-color: #21936D;
-  }
-  
-  /* Signup image styles */
-  .signup-image {
+.login-container {
+  align-items: center;
+  justify-content: row;
+  min-width: 400px;
+  /* margin: 0 auto; */
+  padding: 20px;
+  /* background-color: #036755; */
+  /* background-color: yellow; */
+}
+/* Left Side Image  */
+.health-img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  width: 400px;
+  padding: 20px;
+  position: relative;
+  /* background-color: #2a0dad; */
+}
+.left-side-img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-color: #036755;
+  /* opacity: 0.8; */
+  /* z-index: 2; */
+}
+.health-text-div {
+  position: absolute;
+  left: 50px;
+  color: white;
+  bottom: 20px;
+  /* z-index: 5; */
+}
+.health-text-div h1:first-child {
+  font-size: 40px;
+}
+.health-text-div h1:nth-child(2) {
+  font-size: 40px;
+}
+.health-text-div h1:last-child {
+  font-size: 40px;
+}
+/* Form container styles */
+.signup-content {
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
 
-    margin-top: 20px;
-  }
-  
-  .signup-image img {
-    width: 100%;
-    border-radius: 5px;
-  }
-  
-  .login-admin {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: #036755;
-    border-radius: 6px;
-    justify-content: center;
+/* Form title styles */
+.form-title {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 24px;
+  color: #333333;
+}
+
+/* Form input styles */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+/* Form submit button styles */
+.form-submit {
+  width: 100%;
+  padding: 10px;
+  background-color: #036755;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-submit:hover {
+  background-color: #21936d;
+}
+
+/* Signup image styles */
+.signup-image {
+  margin-top: 20px;
+}
+
+.signup-image img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.login-admin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #036755;
+  border-radius: 6px;
+  justify-content: center;
 }
 
 .login-admin span {
-    margin-bottom: 10px;
-    margin-right: 10px;
-    cursor: pointer;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  cursor: pointer;
 }
 
 .login-admin span:hover {
-    font-weight: bold; /* Make the text bold on hover */
-    font-size: 1.1em; /* Increase the font size by 10% on hover */
-    transition: all 0.3s ease; 
+  font-weight: bold; /* Make the text bold on hover */
+  font-size: 1.1em; /* Increase the font size by 10% on hover */
+  transition: all 0.3s ease;
 }
-
 
 .back-login {
   display: flex;
@@ -111,6 +152,5 @@
 .back-login span:hover {
   font-weight: bold; /* Make the text bold on hover */
   font-size: 1.1em; /* Increase the font size by 10% on hover */
-  transition: all 0.3s ease; 
+  transition: all 0.3s ease;
 }
- 

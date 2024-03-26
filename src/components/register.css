@@ -1,10 +1,60 @@
 /* signup.css */
-
+.signup-page{
+  /* background-color: purple; */
+  background-color: #E4FFED;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.signup{
+  /* background-color: rgb(227, 116, 20); */
+  display: flex;
+  /* justify-content: space-around; */
+  width: 70%;
+}
+/* left signup register  */
+.register-health-img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  width: 45%;
+  padding: 20px;
+  position: relative;
+  /* background-color: #2a0dad; */
+}
+.register-left-side-img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  /* background-color: #f9d20c; */
+  /* opacity: 0.8; */
+  /* z-index: 2; */
+}
+.register-health-text-div {
+  position: absolute;
+  left: 50px;
+  color: white;
+  bottom: 100px;
+  /* z-index: 5; */
+}
+.register-health-text-div h1:first-child {
+  font-size: 40px;
+}
+.register-health-text-div h1:nth-child(2) {
+  font-size: 40px;
+}
+.register-health-text-div h1:last-child {
+  font-size: 40px;
+}
 /* Container styles */
-.container {
-    align-items: center;
-    justify-content: row;
-    max-width: 400px;
+.register-container {
+    /* align-items: center; */
+    /* justify-content: row; */
+    width: 45%;
     margin: 0 auto;
     padding: 20px;
   }
@@ -88,4 +138,3 @@
     font-size: 1.1em; /* Increase the font size by 10% on hover */
     transition: all 0.3s ease; 
   }
-   
